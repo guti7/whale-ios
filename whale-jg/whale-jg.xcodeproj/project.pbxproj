@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				CCB433941E8C38D100AA8C8D /* AppDelegate.swift */,
-				CCB433961E8C38D100AA8C8D /* ViewController.swift */,
-				CCB433981E8C38D100AA8C8D /* Main.storyboard */,
+				CCB433A91E8C3A1300AA8C8D /* Logic */,
+				CCB433A71E8C39F000AA8C8D /* UI */,
 				CCB4339B1E8C38D100AA8C8D /* Assets.xcassets */,
-				CCB4339D1E8C38D100AA8C8D /* LaunchScreen.storyboard */,
 				CCB433A01E8C38D100AA8C8D /* Info.plist */,
 			);
 			path = "whale-jg";
+			sourceTree = "<group>";
+		};
+		CCB433A61E8C39C400AA8C8D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CCB433981E8C38D100AA8C8D /* Main.storyboard */,
+				CCB4339D1E8C38D100AA8C8D /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CCB433A71E8C39F000AA8C8D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CCB433A61E8C39C400AA8C8D /* Storyboards */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		CCB433A81E8C3A0900AA8C8D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCB433961E8C38D100AA8C8D /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CCB433A91E8C3A1300AA8C8D /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CCB433A81E8C3A0900AA8C8D /* ViewControllers */,
+			);
+			name = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +183,7 @@
 				CCB433991E8C38D100AA8C8D /* Base */,
 			);
 			name = Main.storyboard;
+			path = UI/Storyboard;
 			sourceTree = "<group>";
 		};
 		CCB4339D1E8C38D100AA8C8D /* LaunchScreen.storyboard */ = {
@@ -159,6 +192,7 @@
 				CCB4339E1E8C38D100AA8C8D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = UI/Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
