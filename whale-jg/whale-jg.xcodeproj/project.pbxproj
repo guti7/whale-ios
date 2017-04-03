@@ -13,9 +13,12 @@
 		CCB433AB1E8C3DDB00AA8C8D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB433AA1E8C3DDB00AA8C8D /* LoginViewController.swift */; };
 		CCB433AE1E8C3E0000AA8C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB433AC1E8C3E0000AA8C8D /* LaunchScreen.storyboard */; };
 		CCB433B11E8C3E0B00AA8C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB433AF1E8C3E0B00AA8C8D /* Main.storyboard */; };
+		D0D6A0707E61E7DB6461AD7C /* Pods_whale_jg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A94345C1E3593E9DCBE0F8 /* Pods_whale_jg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20A94345C1E3593E9DCBE0F8 /* Pods_whale_jg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_jg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE7560EEBC5A236CAC40356 /* Pods-whale-jg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-jg.release.xcconfig"; path = "Pods/Target Support Files/Pods-whale-jg/Pods-whale-jg.release.xcconfig"; sourceTree = "<group>"; };
 		CC0065D11E8EDB190062536E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Logic/Models/User.swift; sourceTree = "<group>"; };
 		CCB433911E8C38D100AA8C8D /* whale-jg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-jg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB433941E8C38D100AA8C8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CCB433AA1E8C3DDB00AA8C8D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Logic/ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		CCB433AD1E8C3E0000AA8C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = UI/Storyboard/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCB433B01E8C3E0B00AA8C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = UI/Storyboard/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2AD0158F697FFBE187FABEE /* Pods-whale-jg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whale-jg.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whale-jg/Pods-whale-jg.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D6A0707E61E7DB6461AD7C /* Pods_whale_jg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32FE32199A2BEBC669BD82E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20A94345C1E3593E9DCBE0F8 /* Pods_whale_jg.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EFBDB93F40AAD9DE7BDF1C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2AD0158F697FFBE187FABEE /* Pods-whale-jg.debug.xcconfig */,
+				BEE7560EEBC5A236CAC40356 /* Pods-whale-jg.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC0065D31E8EDB210062536E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +72,8 @@
 			children = (
 				CCB433931E8C38D100AA8C8D /* whale-jg */,
 				CCB433921E8C38D100AA8C8D /* Products */,
+				5EFBDB93F40AAD9DE7BDF1C7 /* Pods */,
+				32FE32199A2BEBC669BD82E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCB433A31E8C38D100AA8C8D /* Build configuration list for PBXNativeTarget "whale-jg" */;
 			buildPhases = (
+				A103C9B44FE4CDDA53F835BA /* [CP] Check Pods Manifest.lock */,
 				CCB4338D1E8C38D100AA8C8D /* Sources */,
 				CCB4338E1E8C38D100AA8C8D /* Frameworks */,
 				CCB4338F1E8C38D100AA8C8D /* Resources */,
+				84F29604F1C79F27A858AE07 /* [CP] Embed Pods Frameworks */,
+				A7CD2230794D31268411EE3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,6 +201,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F29604F1C79F27A858AE07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale-jg/Pods-whale-jg-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A103C9B44FE4CDDA53F835BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CD2230794D31268411EE3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whale-jg/Pods-whale-jg-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCB4338D1E8C38D100AA8C8D /* Sources */ = {
@@ -303,6 +378,7 @@
 		};
 		CCB433A41E8C38D100AA8C8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2AD0158F697FFBE187FABEE /* Pods-whale-jg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JM33QBQ4S7;
@@ -316,6 +392,7 @@
 		};
 		CCB433A51E8C38D100AA8C8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE7560EEBC5A236CAC40356 /* Pods-whale-jg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JM33QBQ4S7;

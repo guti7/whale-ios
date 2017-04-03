@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'whale-jg' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Alamofire', '~> 4.4'
+end
+
+
+# No such thing as a Swift library - arent allowed, "Swift dynamic frameworks"
+# Pods for whale-jg
+
+# Dynamic frameworks (intro in iOS8): allowd code, images, and assets to be bundled
+# Static libraries: "fat" binaries, contain several instruction sets for separate devices to account for different cpu architectures
+# don't allow resources such as images or assets
+
+# dynamic frameworks have namesspace classes and static libraries don't
+# collisions are more frequent with static libraries

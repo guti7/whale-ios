@@ -1,0 +1,6 @@
+framework module Pods_whale_jg {
+  umbrella header "Pods-whale-jg-umbrella.h"
+
+  export *
+  module * { export * }
+}
